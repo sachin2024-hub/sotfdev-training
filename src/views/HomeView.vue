@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  
+
   <v-responsive class="" max-height="3000">
     <v-app :theme="theme">
       <v-app-bar class="px-3">
@@ -17,7 +17,7 @@
 
         <v-btn
           :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-          text="Toggle Theme"
+          text=""
           slim
           @click="onClick"
         ></v-btn>
@@ -27,14 +27,14 @@
         <v-container>
           <v-row>
             <v-col cols="12" class="d-flex flex-column align-center justify-center">
-              <v-img :src="logo" height="200" width="190"></v-img>
-              <h1 class="text-h1 text-align mt-16 font-weigth-bold" >Hello CSU-CC</h1>
-              <v-btn class="mt5"
-              prepend-icon=""
+              <v-img :src="logo" height="200" width="190" class="mt-10"></v-img>
+              <h1 class="text-h2 text-align mt-16 mb-10 font-weigth-bold" >WELCOME BACK STUDENTS!</h1>
+              <v-btn class="mt5 front-weight-bold"
               size="x-large"
-              color="pink"
+              color="blue"
               elevation="10"
               to="/login">
+              <v-icon>mdi-page-last</v-icon>
               Login
               </v-btn>
 
