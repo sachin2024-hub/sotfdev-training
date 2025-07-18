@@ -9,22 +9,18 @@ const visible = ref(false)
     <!-- Use v-main to wrap the entire page content and apply background -->
     <v-main
       class="d-flex align-center justify-center"
-      style="background: url('/CSU-CC.jpg') no-repeat center center; background-size: cover; min-height: 100vh;"
+      style="
+        background: url('/CSU-CC.jpg') no-repeat center center;
+        background-size: cover;
+        min-height: 100vh;
+      "
     >
       <div>
         <!-- Logo image -->
-        <v-img
-          class="mx-auto my-6"
-          max-width="228"
-        ></v-img>
+        <v-img class="mx-auto my-6" max-width="228"></v-img>
 
         <!-- Login card -->
-        <v-card
-          class="mx-auto pa-12 pb-8"
-          elevation="8"
-          max-width="448"
-          rounded="lg"
-        >
+        <v-card class="mx-auto pa-12 pb-8" elevation="8" max-width="448" rounded="lg">
           <div class="text-subtitle-1 text-medium-emphasis">Account</div>
 
           <v-text-field
@@ -34,7 +30,9 @@ const visible = ref(false)
             variant="outlined"
           ></v-text-field>
 
-          <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between mt-4">
+          <div
+            class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between mt-4"
+          >
             Password
 
             <a
@@ -57,25 +55,11 @@ const visible = ref(false)
             @click:append-inner="visible = !visible"
           ></v-text-field>
 
-          <v-card
-            class="mb-6 mt-4"
-            color="surface-variant"
-            variant="tonal"
-          >
-            <v-card-text class="text-medium-emphasis text-caption">
-
-            </v-card-text>
+          <v-card class="mb-6 mt-4" color="surface-variant" variant="tonal">
+            <v-card-text class="text-medium-emphasis text-caption"> </v-card-text>
           </v-card>
 
-          <v-btn
-            class="mb-4"
-            color="blue"
-            size="large"
-            variant="tonal"
-            block
-          >
-            Log In
-          </v-btn>
+          <v-btn class="mb-4" color="blue" size="large" variant="tonal" block> Log In </v-btn>
 
           <v-card-text class="text-center">
             <a
@@ -86,6 +70,9 @@ const visible = ref(false)
             >
               Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
             </a>
+            <v-btn class="mt5" prepend-icon="" size="x-large" color="pink" elevation="10" to="/">
+              balik sa pinaka una nga page
+            </v-btn>
           </v-card-text>
         </v-card>
       </div>
