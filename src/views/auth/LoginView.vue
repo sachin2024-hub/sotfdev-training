@@ -71,7 +71,7 @@ const visible = ref(false)
               Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
             </a>
             <v-btn class="mt5" prepend-icon="" size="x-large" color="pink" elevation="10" to="/">
-              balik sa pinaka una nga page
+              Back to Home 1 
             </v-btn>
           </v-card-text>
         </v-card>
